@@ -20,8 +20,8 @@ export default function ApiKeyGate({ children }: { children: React.ReactNode }) 
   }, []);
 
   async function save() {
-    if (!input.trim().startsWith('AIza')) {
-      setError('Gemini API keys start with AIza...');
+    if (!input.trim().startsWith('AIza') && !input.trim().startsWith('AQ')) {
+      setError('Invalid Gemini API key format.');
       return;
     }
     setSaving(true);
@@ -84,7 +84,7 @@ export default function ApiKeyGate({ children }: { children: React.ReactNode }) 
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && save()}
-              placeholder="AIzaSy..."
+              placeholder="AIzaSy... or AQ..."
               className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2.5 text-sm text-white placeholder-gray-600 outline-none focus:border-violet-500 pr-10"
             />
             <button onClick={() => setShow(!show)} className="absolute right-3 top-2.5 text-gray-500 hover:text-gray-300">
