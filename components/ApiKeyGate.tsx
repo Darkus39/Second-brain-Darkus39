@@ -61,7 +61,7 @@ export default function ApiKeyGate({ children }: { children: React.ReactNode }) 
               <Key size={18} className="text-violet-300" />
             </div>
             <div>
-              <h1 className="text-white font-semibold text-lg">Second<span className="text-violet-400">Brain</span></h1>
+              <h1 className="text-white font-semibold text-lg">Multi<span className="text-violet-400">Agents</span></h1>
               <p className="text-gray-400 text-xs">Connect a free Gemini API key to continue</p>
             </div>
           </div>
