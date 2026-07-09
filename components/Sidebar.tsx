@@ -18,7 +18,7 @@ export default function Sidebar() {
   return (
     <aside className="w-56 shrink-0 h-screen bg-gray-950 border-r border-gray-800 flex flex-col py-5 px-3">
       <div className="px-3 mb-6">
-        <span className="text-white font-semibold text-lg tracking-tight">Second<span className="text-violet-400">Brain</span></span>
+        <span className="text-white font-semibold text-lg tracking-tight">Multi<span className="text-violet-400">Agent</span></span>
       </div>
       <nav className="flex flex-col gap-1 flex-1">
         {nav.map(({ href, label, icon: Icon, color }) => {
